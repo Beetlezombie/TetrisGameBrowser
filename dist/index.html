@@ -6,12 +6,18 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Tetris game</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="css/debug.css">
 </head>
 <body>
+    <div class="grid-container">
+        <div id="score">Score: </div>
+        <div class="pause-btn"><button id="pause">Pause/Resume</button></div>
+        <div class="paint"><canvas id="tetris" width="240" height="400"></canvas></div>
 
-    <canvas id="tetris" width="240" height="400"></canvas>
-    <script src="js\tetris.js"></script>
+        <script src="js\tetris.js"></script>
+    </div>
+    
     
 </body>
 </html>
